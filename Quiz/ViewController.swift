@@ -46,5 +46,21 @@ class ViewController: UIViewController {
         
         questionLabel.text = questions[currentQuestionIndex]
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Set the label's initial alpha
+        questionLabel.alpha = 0
+    }
+    
+    func animateLabelTransitions() {
+        let animationClosure = { () -> Void in
+           self.questionLabel.alpha = 1
+        }
+        
+        // Animate the alpha
+        UIView.animate(withDuration: 0.5, animations: animationClosure)
+    }
 }
 
