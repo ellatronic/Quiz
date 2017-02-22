@@ -47,14 +47,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lT-uc-UzV">
+                                <rect key="frame" x="175" y="107" width="25" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lGa-85-1Ip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Fg-mo-WL7"/>
+                            <constraint firstItem="9lT-uc-UzV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Pa-te-1QB"/>
                             <constraint firstItem="eVd-RJ-ipA" firstAttribute="top" secondItem="X9a-5s-u4H" secondAttribute="bottom" constant="114" id="ETa-jf-RDL"/>
                             <constraint firstItem="lGa-85-1Ip" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="87" id="LNP-Ph-ege"/>
                             <constraint firstItem="4w1-3q-RN2" firstAttribute="top" secondItem="eVd-RJ-ipA" secondAttribute="bottom" constant="17.541684768565574" id="bnC-Et-axa"/>
                             <constraint firstItem="lGa-85-1Ip" firstAttribute="centerX" secondItem="X9a-5s-u4H" secondAttribute="centerX" id="cA0-RV-Uup"/>
+                            <constraint firstItem="9lT-uc-UzV" firstAttribute="top" secondItem="lGa-85-1Ip" secondAttribute="top" id="cdG-fH-hsF"/>
                             <constraint firstItem="4w1-3q-RN2" firstAttribute="centerX" secondItem="X9a-5s-u4H" secondAttribute="centerX" id="mBu-ax-Yc7"/>
                             <constraint firstItem="eVd-RJ-ipA" firstAttribute="centerX" secondItem="X9a-5s-u4H" secondAttribute="centerX" id="mON-3Y-ynJ"/>
                             <constraint firstItem="X9a-5s-u4H" firstAttribute="top" secondItem="lGa-85-1Ip" secondAttribute="bottom" constant="8.0000000000000284" id="wWk-GF-DFl"/>
@@ -62,7 +70,8 @@
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="eVd-RJ-ipA" id="TkL-a4-hi1"/>
-                        <outlet property="questionLabel" destination="lGa-85-1Ip" id="ld6-Lq-kWm"/>
+                        <outlet property="currentQuestionLabel" destination="lGa-85-1Ip" id="E91-Me-2by"/>
+                        <outlet property="nextQuestionLabel" destination="9lT-uc-UzV" id="cvt-Gs-hfN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
